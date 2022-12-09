@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+             Employee registration form
+        </title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+       <center> <h1>Create your account</h1>
+        <form method="" action="/action_page.php" name="employreg_form" onsubmit="return verify()">   
+            <table>
+                <tr>    
+                    <td><label>First Name: </label></td>    
+                    <td>    
+                        <input type="text" name="fname" placeholder="Enter your Name here ">    
+                    </td>    
+                </tr>    
+                <tr>
+                    <td><level>Last name :</level></td>
+                    <td>
+                        <input type="text" name="lname" placeholder="Enter last name">
+                    </td>
+                </tr>
+               
+                <tr>    
+                    <td><label>Email-iD : </label></td>    
+                    <td>    
+                        <input type="text" name="emailid" placeholder=" Enter Email id here ">    
+                    </td>    
+                </tr>    
+                <tr>    
+                    <td><label>DateofBirth: </label></td>    
+                    <td>    
+                        <input type="date" id="birthday" name="birthday"> 
+                    </td>    
+                </tr> 
+                <tr>    
+                    <td><label>Mobile: </label></td>    
+                    <td>    
+                        <input type="number" name="mobile" placeholder="Enter Mobile number">    
+                    </td>    
+                </tr>       
+                <tr>    
+                    <td><label>Password: </label></td>    
+                    <td>    
+                        <input type="text" name="Password" placeholder="Enter Password">    
+                    </td>    
+                </tr>    
+                <tr>
+                    <td><label>Confirm Password:</label></td>
+                    <td>
+                        <input type ="text" name="cPassword" placeholder="Confirm your Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td><level>Gender:</level></td>
+                    <td>
+                        <select name="Gender">
+                            <option value="select Gender">select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">FeMale</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+              <tr>
+                <td> <label>Age:</label></td> 
+            <td>
+                   <select name="Age">
+                    <option value="select Age"> Select Age</option>
+            <option value="Below 18"> Below 18</option>
+            <option value="">Above 18</option>
+         </select>
+         </td>
+        </tr> 
+        <tr>
+            <td><level>Job Role:</level></td>
+            <td>
+                <select name="JObRole">
+                 <option value=" "> Front-End Developer</option>
+                 <option value=" "> Back-End Developer</option>
+                 <option value=" "> Others</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="submit" value="Create Account">
+                <input type="reset" name="Reset" value="Clear form">
+            </td>
+        </tr>
+            </table>
+        </form>
+    </center>
+    </body>
+    <script src="form.js"></script>
+</html>
